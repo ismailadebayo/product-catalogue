@@ -23,7 +23,7 @@ import {
 import { useProductStore } from "../store/product";
 import { useState } from "react";
 
-const ProductCard = ( product ) => {
+const ProductCard = ( {product} ) => {
 	const [updatedProduct, setUpdatedProduct] = useState(product);
 
 	const textColor = useColorModeValue("gray.600", "gray.200");

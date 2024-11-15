@@ -44,9 +44,7 @@ export const createProduct= async(req, res)=>{
 
     const {id} = req.params
     const product = req.body
-
-   
-
+ 
     if(!mongoose.Types.ObjectId.isValid){
         res.status(502).json({success: true, message:''})
     }

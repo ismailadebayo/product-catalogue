@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useProductStore } from "../store/product";
 
 const CreatePage = () => {
+	
 	const [newProduct, setNewProduct] = useState({
 		name: "",
 		price: "",
